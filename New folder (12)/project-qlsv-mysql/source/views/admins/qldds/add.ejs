@@ -1,0 +1,33 @@
+
+<% layout('layouts/admin') %>
+<div class="content-add content-grid">
+    <div class="content-margin">
+        <h2 class="content-title">Thêm mới thông tin qldd</h2>
+        <div class="content-form">
+            <form action="/qldd/add" method="POST">
+                <label for="name">số buổi vắng</label><br>
+                <input type="number" name="sbv" id="">
+                <label for="student">sinh viên</label><br>
+                <select class="" name="StudentId">
+                    <% var options = []; %>
+                    <% for (let i of students){%>
+                        <option value='<%= i.id %>'><%= i.name %></option>
+                        <%}%>
+                </select><br>
+                <label for="subject">môn học</label><br>
+                <select class="" name="SubjectId">
+                    <% var options = []; %>
+                    <% for (let i of subjects){%>
+                        <option value='<%= i.id %>'><%= i.nameS %></option>
+                        <%}%>
+                </select><br>
+                        
+                <button onclick="clickGui()" class="gui">Lưu thông tin</button>
+            </form>
+           <a href="/qldd">
+            <button class="huy">Huỷ bỏ</button>
+           </a>
+           
+        </div>
+    </div>
+</div>

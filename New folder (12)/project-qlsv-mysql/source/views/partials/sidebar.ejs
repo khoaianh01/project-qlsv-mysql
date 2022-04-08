@@ -1,0 +1,93 @@
+
+<div class="sidebar">
+    <ul class="sidebar-menu">
+        <% if (user.role == 'Admin') {%>
+       
+        <li class="sidebar-item">
+            <a href="/khoa" class="sidebar-links">
+                <i class='bx bxs-landmark'></i>
+               <span>khoa</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="/lop" class="sidebar-links">
+                <i class='bx bxs-category'></i>
+               <span>lớp</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="/teacher" class="sidebar-links">
+                <i class='bx bxs-folder-open'></i>
+               <span>Quản lý giáo  viên</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="/student" class="sidebar-links">
+                <i class='bx bxs-graduation'></i>
+               <span>sinh viên</span>
+            </a>
+        </li>
+     
+        <li class="sidebar-item">
+            <a href="/qldd" class="sidebar-links">
+                <i class='bx bxs-folder-open'></i>
+               <span>Quản lý điểm danh</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="/qld" class="sidebar-links">
+                <i class='bx bxs-folder-open'></i>
+               <span>Quản lý điểm </span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="/subject" class="sidebar-links">
+                <i class='bx bxs-folder-open'></i>
+               <span>Quản lý môn học</span>
+            </a>
+        </li>
+        <%}%>
+        <% if (user.role == 'teacher') { %>
+        <li class="sidebar-item">
+            <a href="/student" class="sidebar-links">
+                <i class='bx bxs-graduation'></i>
+               <span>sinh viên</span>
+            </a>
+        </li>
+     
+        <li class="sidebar-item">
+            <a href="/qldd" class="sidebar-links">
+                <i class='bx bxs-folder-open'></i>
+               <span>Quản lý điểm danh</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="/qld" class="sidebar-links">
+                <i class='bx bxs-folder-open'></i>
+               <span>Quản lý điểm </span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="/subject" class="sidebar-links">
+                <i class='bx bxs-folder-open'></i>
+               <span>Quản lý môn học</span>
+            </a>
+        </li>
+        <%}%>
+     
+         <li class="sidebar-item">
+            <a href="/user/logout" class="sidebar-links">
+                <i class='bx bx-subdirectory-right'></i>
+               <span>Logout</span>
+            </a>
+        </li>
+        <!-- <li class="sidebar-item">
+            <a href="" class="sidebar-links">
+                <i class='bx bxs-group'></i>
+               <span>Thành viên</span>
+            </a>
+        </li> -->
+    
+        
+    </ul>
+</div>

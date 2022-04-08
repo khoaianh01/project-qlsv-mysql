@@ -1,0 +1,17 @@
+<% layout('layouts/admin') %>
+<div class="content-add content-grid">
+    <div class="content-margin">
+        <h2 class="content-title">Thêm mới thông tin subject</h2>
+        <div class="content-form">
+            <form action="/subject/add" method="POST">
+                <label for="nameS">tên subject</label><br>
+                <input type="text" class="inputName" placeholder="nhập tên subject" name="nameS"><br>
+                <button onclick="clickGui()" class="gui">Lưu thông tin</button>
+            </form>
+           <a href="/subject">
+            <button class="huy">Huỷ bỏ</button>
+           </a>
+           
+        </div>
+    </div>
+</div>

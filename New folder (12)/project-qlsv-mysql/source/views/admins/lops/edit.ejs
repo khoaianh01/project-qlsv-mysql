@@ -1,0 +1,16 @@
+<% layout('layouts/admin') %>
+<div class="content-add content-grid">
+    <div class="content-margin">
+        <h2 class="content-title">Thêm mới thông tin lop</h2>
+        <div class="content-form">
+            <form action="/lop/edit/<%= lop.id %>?_method=PUT" method="POST">
+                <label for="nameL">tên lop</label><br>
+                <input type="text" class="inputName" placeholder="nhập tên lop" name="nameL" value="<%=lop.nameL%>"><br>
+                <button  class="gui">Lưu thông tin</button>
+            </form>
+           <a href="/lop">
+            <button class="huy">Huỷ bỏ</button>
+           </a>
+        </div>
+    </div>
+</div>

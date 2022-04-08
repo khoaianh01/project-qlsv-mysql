@@ -1,0 +1,27 @@
+<% layout('layouts/admin') %>
+<div class="content-add content-grid">
+    <div class="content-margin">
+        <h2 class="content-title">Thêm mới thông tin teacher</h2>
+        <div class="content-form">
+            <form action="/teacher/edit/<%=teacher.id %>?_method=PUT" method="POST">
+                <label for="name">tên giáo viên</label><br>
+                <input type="text" class="inputName" placeholder="nhập tên teacher" value="<%=teacher.nameT%>" name="nameT" ><br>
+                <label for="phone">phone</label><br>
+                <input type="text" class="inputName" placeholder="nhập tên teacher" value="<%=teacher.phone%>" name="phone"><br>
+                <label for="trinhdo">trinhdo</label><br>
+                <input type="text" class="inputName" placeholder="nhập tên teacher" value="<%=teacher.trinhdo%>" name="trinhdo"><br>
+                <select class="" name="KhoaId">
+                    <% var options = []; %>
+                    <% for (let i of khoas){%>
+                        <option value='<%= i.id %>'><%= i.nameK %></option>
+                        <%}%>
+                </select><br>
+              
+                <button  class="gui">Lưu thông tin</button>
+            </form>
+           <a href="/teacher">
+            <button class="huy">Huỷ bỏ</button>
+           </a>
+        </div>
+    </div>
+</div>

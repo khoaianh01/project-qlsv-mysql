@@ -1,0 +1,34 @@
+.sidebar{
+    width: 250px;
+    height: 100vh;
+    background:#1f2232;
+    /* position: relative; */
+}
+
+.sidebar ul li
+{ 
+    position: relative;
+    height:50px;
+    width:100%;
+    font-size: 15px;
+  
+    line-height: 50px;
+    
+}
+.sidebar ul li i{
+    padding :0 25px;
+    height:50px;
+    border-radius: 12px;
+    line-height:50px;
+    text-align: center;
+}
+.sidebar ul li a{
+    color: #fff;
+    display:flex;
+    align-items: center;
+}
+.sidebar ul li a:hover{
+    color: #11101d;
+    border-radius: 12px;
+    background: #fff;
+}

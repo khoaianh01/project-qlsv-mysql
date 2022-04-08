@@ -1,0 +1,49 @@
+<header>
+    <div class="header">
+               <div class="header-left">
+                   <a href="" class="header-left__link  header-display">
+                       <img src="img/avatar.png" width="30" height="30">
+                       <span style="margin-left:15px;font-size:20px;color:rgb(23 18 12);">Lê Hải ANh</span>
+                   </a>
+               </div>
+               <div class="header-right" class="header-display">
+                <ul  class="header-right__menu header-display" >
+                 
+                    <li class="header-right__item header-right__item-title">
+                        <a href="" class="header-right__links">
+                            <i class='bx bx-list-ul' style="color:#fff;font-size:25px"></i>&nbsp;&nbsp;
+                            <!-- <i class='bx bxl-github' style="color: #000;font-size:40px"></i>&nbsp;&nbsp; -->
+                            <span class="" style="margin-left:10px;color:aquamarine;font-size:24px">Student Management System
+                            </span>
+                        </a>
+                    </li>
+                    <!-- {{#if user}} -->
+                    <li class="">
+                        <a class="header-left__link header-display" href="#" id="navbardrop" data-toggle="dropdown">
+                            <img src="/img/avatar.png" width="30" height="30" alt="">&nbsp;&nbsp;
+                            <!-- Lê Hải Anh <i class="fa fa-angle-down fa-lg"></i> -->
+                            <p style="margin-right:3px;font-size:15px;color:rgb(241, 237, 232);"><%= user.email%></p>
+                            <i class='bx bx-chevron-down' style="color: rgb(243, 237, 237);font-size:20px"></i>
+                        </a>
+                        <!-- <div class="dropdown-menu dropdown-menu-left bg-primary">
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-cogs fa-lg"></i>&nbsp; Settings
+                            </a>
+                            <a class="dropdown-item" href="/users/signout">
+                                <i class="fa fa-power-off fa-lg"></i>&nbsp; Logout
+                            </a>
+                        </div> -->
+                    </li>
+                    <!-- {{else}}
+                    <li class="nav-item">
+                        <a class="btn btn-success" href="/users/signin">Sign in</a>
+                    </li>
+                    <li class="nav-item ml-1">
+                        <a class="btn btn-outline-secondary" href="/users/signup">Create an account</a>
+                    </li>
+                    {{/if}} -->
+                </ul>
+                </div>
+    </div>
+
+</header>

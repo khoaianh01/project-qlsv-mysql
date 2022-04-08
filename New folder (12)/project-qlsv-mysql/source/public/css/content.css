@@ -1,0 +1,122 @@
+.content-grid{
+    width: 90%;
+    margin: 0 auto;
+    background:rgb(245, 241, 241);
+    max-height:100%;
+    margin-top: 20px;
+}
+.content-grid .content-margin{
+    padding: 10px 10px 0 10px;
+    max-height:100%
+}
+.content-grid .content-header{
+    display:flex;
+    justify-content: space-between;
+}
+.content-grid .content-header .content-header__left p{
+    font-size:20px;
+    font-weight:300;
+    /* margin: 10px 0px 0px 10px; */
+}
+.content-grid .content-header .content-header__right{
+/*    
+    width:100px;
+    height: 35px;
+    margin:7px 5px 0 0;  */
+    color: rgb(231, 225, 225);
+    position: relative;
+}
+.content-grid .content-header .content-header__right a{
+    color: rgb(237, 230, 230);
+}
+.content-grid .content-header .content-header__right .add{
+
+    background:rgb(71, 183, 71);
+    color: rgb(231, 225, 225);
+    width:120px;
+    height: 35px;
+    /* margin:7px 5px 0 0;  */
+    font-size: 15px;
+    border-radius:6px
+}
+.content-grid .content-header .content-header__right i{
+    position:absolute;
+    font-size: 15px;
+    top:10.5px;
+    left:11px;
+    
+}
+.content-grid .content-search{
+    /* display:flex; */
+    width: 330px;
+    /* justify-content: space-between; */
+}
+.content-grid .content-search .content-form input{
+    height:40px;
+    width: 200px;
+    border-radius: 10px;
+}
+.content-grid .content-search .content-button{
+    position: relative;
+    color:#fff;
+    display: inline;
+}
+.content-grid .content-search .content-button button{
+    background:rgb(73, 93, 180);
+    height: 40px;
+    width: 110px;
+    color:#fff;
+    border-radius: 10px;
+}
+.content-grid .content-search .content-button i{
+    font-size: 15px;
+    position: absolute;
+    top: -2px;
+    left: 10px;
+    color: #fff;
+}
+.content-grid .content-table{
+    margin-top:20px;
+    font-weight: 300;
+}
+.content-grid .content-table table tr th,
+.content-grid .content-table table tr td{
+    width: 400px;
+    text-align: left;
+    font-size:20px;
+    height:50px;
+    line-height:50px;
+}
+.content-grid .content-table table tr:hover{
+   background:#fff;
+   
+}
+.content-add .content-title{
+    font-size: 25px;
+    font-weight:300;
+    margin-bottom: 20px;
+}
+.content-add .content-form{
+    margin-top:20px;
+}
+.content-add .content-form label{
+    font-size: 20px;
+}
+.content-add .content-form  input{
+    margin-top:20px;
+    margin-bottom: 20px;
+    height:30px;
+    width: 100%;
+}
+.content-add  .content-form .gui{
+    background:rgb(65, 9, 235);
+    height:30px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.content-add  .huy{
+    background:rgb(235, 9, 9);
+    height:25px;
+    width: 70px;
+    color:#fff;
+}

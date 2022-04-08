@@ -1,0 +1,18 @@
+<% layout('layouts/user') -%>
+<div class="login-page">
+    <div class="form">
+        <form class="register-form" action="/user/register" method="POST">
+            <input type="text" placeholder="name" name="username">
+            <input type="text" placeholder="email address"/ name="email"/>
+            <input type="password" placeholder="password" name="password"/>
+            <button>create</button>
+            <p class="message">Already registered? <a href="/">Sign In</a></p>
+          </form>
+      <!-- <form class="login-form" action="/user/login" method="POST">
+        <input type="text" placeholder="username"/ name="username">
+        <input type="password" placeholder="password"/ name="password">
+        <button>login</button>
+        <p class="message">Not registered? <a href="/user/register">Create an account</a></p>
+      </form> -->
+    </div>
+  </div>

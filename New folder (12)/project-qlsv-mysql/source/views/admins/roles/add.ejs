@@ -1,0 +1,17 @@
+<% layout('layouts/admin') %>
+<div class="content-add content-grid">
+    <div class="content-margin">
+        <h2 class="content-title">Thêm mới thông tin role</h2>
+        <div class="content-form">
+            <form action="/role/add" method="POST">
+                <label for="nameK">tên role</label><br>
+                <input type="text" class="inputName" placeholder="nhập tên role" name="nameR"><br>
+                <button onclick="clickGui()" class="gui">Lưu thông tin</button>
+            </form>
+           <a href="/role">
+            <button class="huy">Huỷ bỏ</button>
+           </a>
+           
+        </div>
+    </div>
+</div>

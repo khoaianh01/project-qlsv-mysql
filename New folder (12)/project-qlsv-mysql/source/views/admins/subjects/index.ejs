@@ -1,0 +1,58 @@
+<% layout('layouts/admin') %>
+<div class="content-grid">
+    <div class="content-margin">
+        <div class="content-header">
+            <div class="content-header__left">
+                <p>Danh sách subject</p>
+            </div>
+            <div class="content-header__right">
+                <a href="/subject/add">
+                    <button class="add">Thêm mới</button>
+                    <i class='bx bx-message-alt-add'></i>
+                </a>
+            </div>
+        </div>
+        <div class="content-search">
+            <div class="content-form">
+                <form action="/subject/search" method="POST">
+                    <input type="text" name="nameS"  placeholder="tìm kiếm tên subject" >
+                    <div class="content-button">
+            
+                        <button>
+                            tìm kiếm
+                         </button>
+                         <i class='bx bx-search-alt-2' ></i>
+               
+                    </div>
+                   
+                </form>
+            </div>
+           
+        </div>
+        <div class="content-table">
+            <div>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tên môn học</th>
+                        
+                        <th>thao tác</th>
+                    </tr>
+                    <% let i=0 %>
+                    <% for(let subject of subjects){%>
+                    <% i++%>
+                    <tr>
+                        <td ><%= i %></td>
+                        <td ><%= subject.nameS %></td>
+                       
+                        <td >
+                            <a href="/subject/edit/<%= subject.id%>"><button onclick="onEdit()" class="btn btn-primary"><i class='bx bxs-edit'></i></button></a>
+                            <form action="/subject/delete/<%= subject.id%>?_method=DELETE" method="POST" style="display: inline;"><button><i class='bx bx-trash'></i></button></form>
+                        </td>
+                    </tr>
+                    <%}%>    
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
