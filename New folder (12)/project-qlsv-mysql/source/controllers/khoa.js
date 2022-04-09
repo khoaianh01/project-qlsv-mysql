@@ -13,7 +13,7 @@ module.exports.postKhoa = async (req, res, next) => {
     const nameK = req.body.nameK;
     const isKhoa = await db.Khoa.findOne({where:{nameK}});
     if(isKhoa){
-       return  res.render('error',{msg:"đã có rồi,thêm lại đi",link:'khoa/add'})
+       return  res.render('error',{msg:"đã có tên khoa rồi,thêm lại đi",link:'khoa/add'})
     }
     let khoas = await db.Khoa.create({nameK});
     res.redirect('/khoa/add')

@@ -40,7 +40,7 @@ module.exports.postStudent= async (req, res, next) => {
     const {name, email,gender,ngaysinh,LopId}= req.body;
     const isStudent = await db.Student.findOne({where: {[Op.or]: [{name}, {email}]}});
     if(isStudent){
-       return  res.render('error',{msg:"đã có rồi học sinh này r,thêm lại đi",link:'student/add'})
+       return  res.render('error',{msg:"đã có  học sinh này r,thêm lại đi",link:'student/add'})
     }
     let students = await db.Student.create({name, email,gender,ngaysinh,LopId});
     res.redirect('/student/add')
@@ -63,7 +63,8 @@ module.exports.putEdit = async (req, res, next) =>{
     const {id} = req.params;
     // console.log(id)
     const {name, email,gender,ngaysinh,LopId} = req.body;
-  
+ 
+   
     await db.Student.update({name, email,gender,ngaysinh,LopId},{where:{id}})
     res.redirect('/student')
 }
